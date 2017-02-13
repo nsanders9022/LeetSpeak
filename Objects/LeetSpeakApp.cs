@@ -12,7 +12,17 @@ namespace LeetSpeak.Objects
       _sentence = sentence;
     }
 
-    public string Translate(string sentence)
+    public string GetSentence()
+    {
+      return _sentence;
+    }
+
+    public void SetSentence(string sentence)
+    {
+      _sentence = sentence;
+    }
+
+    public static string Translate(string sentence)
     {
       List<char> translated = new List<char>{};
 
