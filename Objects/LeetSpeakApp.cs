@@ -28,14 +28,16 @@ namespace LeetSpeak.Objects
         {
           translated.Add('0');
         }
+        else if (array[character] == 'I')
+        {
+          translated.Add('1');
+        }
         else
         {
           translated.Add(array[character]);
         }
 
       }
-
-
 
       string result = string.Join("", translated.ToArray());
       return result;

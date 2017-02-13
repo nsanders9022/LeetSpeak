@@ -27,6 +27,13 @@ namespace LeetSpeak
       Assert.Equal("p0w3r", testString.Translate("power"));
     }
 
+    [Fact]
+    public void Translate_display1_string()
+    {
+      LeetSpeakApp testString = new LeetSpeakApp();
+      Assert.Equal("1c3land", testString.Translate("Iceland"));
+    }
+
 
 
     //
