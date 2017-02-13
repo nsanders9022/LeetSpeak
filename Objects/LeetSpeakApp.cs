@@ -32,13 +32,16 @@ namespace LeetSpeak.Objects
         {
           translated.Add('1');
         }
+        else if (character >0 && (array[character] == 's' && array[character-1] != ' '))
+        {
+          translated.Add('z');
+        }
         else
         {
           translated.Add(array[character]);
         }
 
       }
-
       string result = string.Join("", translated.ToArray());
       return result;
     }

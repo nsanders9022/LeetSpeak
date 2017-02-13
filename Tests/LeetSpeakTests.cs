@@ -34,6 +34,13 @@ namespace LeetSpeak
       Assert.Equal("1c3land", testString.Translate("Iceland"));
     }
 
+    [Fact]
+    public void Translate_displayz_string()
+    {
+      LeetSpeakApp testString = new LeetSpeakApp();
+      Assert.Equal("s0rtz", testString.Translate("sorts"));
+    }
+
 
 
     //
