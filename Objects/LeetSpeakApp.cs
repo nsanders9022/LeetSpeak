@@ -6,26 +6,31 @@ namespace LeetSpeak.Objects
   public class LeetSpeakApp
   {
     private string _sentence;
-    private static List<string> _original = new List<string>{};
-    // private static List<string> _translated = new List<string>{};
 
     public void LeetSpeak(string sentence)
     {
       _sentence = sentence;
-      _original.Add(sentence);
     }
 
-    public List<string> Translate(string sentence)
+    public string Translate(string sentence)
     {
-      List<string> translated = new List<string>{};
-      translated.Add(sentence);
-      return translated;
+      List<char> translated = new List<char>{};
+
+      char[] array = sentence.ToCharArray();
+
+      for (int character = 0; character < sentence.Length; character++)
+      {
+        translated.Add(array[character]);
+      }
+
+      string result = string.Join("", translated.ToArray());
+      return result;
     }
 
-    public static void DeleteAll()
-    {
-      _original.Clear();
-    }
+    // public static void DeleteAll()
+    // {
+    //   _original.Clear();
+    // }
 
   }
 }

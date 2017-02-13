@@ -5,22 +5,21 @@ using System.Collections.Generic;
 
 namespace LeetSpeak
 {
-  public class LeetSpeakTest : IDisposable
+  public class LeetSpeakTest
   {
     [Fact]
     public void Translate_displayWord_string()
     {
       LeetSpeakApp testString = new LeetSpeakApp();
-      List<string> expectedResult = new List<string>{"map"};
-      Assert.Equal(expectedResult, testString.Translate("map"));
+      Assert.Equal("map", testString.Translate("map"));
     }
 
 
 
-
-    public void Dispose()
-    {
-      LeetSpeakApp.DeleteAll();
-    }
+    //
+    // public void Dispose()
+    // {
+    //   LeetSpeakApp.DeleteAll();
+    // }
   }
 }
