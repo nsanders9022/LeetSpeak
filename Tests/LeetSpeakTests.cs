@@ -20,6 +20,13 @@ namespace LeetSpeak
       Assert.Equal("cam3l", testString.Translate("camel"));
     }
 
+    [Fact]
+    public void Translate_display0_string()
+    {
+      LeetSpeakApp testString = new LeetSpeakApp();
+      Assert.Equal("p0w3r", testString.Translate("power"));
+    }
+
 
 
     //

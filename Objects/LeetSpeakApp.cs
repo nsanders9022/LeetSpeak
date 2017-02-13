@@ -24,6 +24,10 @@ namespace LeetSpeak.Objects
         {
           translated.Add('3');
         }
+        else if (array[character] == 'o' || array[character] == 'O')
+        {
+          translated.Add('0');
+        }
         else
         {
           translated.Add(array[character]);
