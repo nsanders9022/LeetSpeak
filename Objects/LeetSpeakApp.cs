@@ -20,8 +20,18 @@ namespace LeetSpeak.Objects
 
       for (int character = 0; character < sentence.Length; character++)
       {
-        translated.Add(array[character]);
+        if (array[character] == 'e' || array[character] == 'E')
+        {
+          translated.Add('3');
+        }
+        else
+        {
+          translated.Add(array[character]);
+        }
+
       }
+
+
 
       string result = string.Join("", translated.ToArray());
       return result;

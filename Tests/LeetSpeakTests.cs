@@ -13,6 +13,12 @@ namespace LeetSpeak
       LeetSpeakApp testString = new LeetSpeakApp();
       Assert.Equal("map", testString.Translate("map"));
     }
+    [Fact]
+    public void Translate_displayE_string()
+    {
+      LeetSpeakApp testString = new LeetSpeakApp();
+      Assert.Equal("cam3l", testString.Translate("camel"));
+    }
 
 
 
